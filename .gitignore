@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# But not these directories
+!*/
+
+# Ignore all files in any directory
+/*/**
+
+# But not the src/main directories and their contents
+!/*/src/main/
+!/*/src/main/**
+
+# Ensure .gitignore itself is not ignored
+!.gitignore
