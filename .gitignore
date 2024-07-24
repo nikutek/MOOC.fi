@@ -1,9 +1,2 @@
-# Ignore everything
-*
-
-# But not the src/main directories and their contents
-!/*/src/main/
-!/*/src/main/**
-
-# Ensure .gitignore itself is not ignored
-!.gitignore
+/mooc-java-programming-i/mooc-java-programming-i/part07-Part07_06.GradeStatistics/target/
+/mooc-java-programming-i/mooc-java-programming-i/part07-Part07_07.RecipeSearch/target/
