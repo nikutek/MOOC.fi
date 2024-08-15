@@ -1,0 +1,20 @@
+Sausage soup
+20
+sausage
+potato
+water
+
+Meatballs
+10
+ground meat
+
+Pancake dough
+15
+milk
+
+Tofu rolls
+75
+tofu
+onion
+cucumber
+avocado
