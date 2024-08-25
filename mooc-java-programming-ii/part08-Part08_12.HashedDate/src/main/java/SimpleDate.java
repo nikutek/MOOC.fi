@@ -12,6 +12,30 @@ public class SimpleDate {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final SimpleDate other = (SimpleDate) obj;
+        if (this.day != other.day) {
+            return false;
+        }
+        if (this.month != other.month) {
+            return false;
+        }
+        if (this.year != other.year) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     public String toString() {
         return this.day + "." + this.month + "." + this.year;
     }
@@ -33,6 +57,15 @@ public class SimpleDate {
         }
 
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 83 * hash + this.day;
+        hash = 83 * hash + this.month;
+        hash = 83 * hash + this.year;
+        return hash;
     }
 
     public int differenceInYears(SimpleDate other) {
