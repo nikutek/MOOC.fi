@@ -11,23 +11,29 @@ import java.util.ArrayList;
  * @author user
  */
 public class TodoList {
-
-    private ArrayList list = new ArrayList<>();
+    private ArrayList<String> todos;
 
     public TodoList() {
-    }
-
-    public void add(String task) {
-        list.add(task);
+        this.todos = new ArrayList <String>();
     }
     
-    public void remove(int idx){
-        list.remove(idx);
+    public void add(String task){
+        todos.add(task);
     }
-
-    public void print() {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println((i + 1) + ": " + list.get(i));
+    
+    public void remove(int number){
+        todos.remove(number-1);
+    }
+    
+    public void print(){
+        int idx = 1;
+        for(String todo: todos){
+            System.out.println(idx+": "+todo);
+            idx++;
         }
     }
+    
+    
+    
+    
 }

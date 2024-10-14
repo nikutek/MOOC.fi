@@ -12,11 +12,11 @@ import java.util.Scanner;
  * @author user
  */
 public class UserInterface {
-    private TodoList list;
+    private TodoList todoList;
     private Scanner scanner;
 
-    public UserInterface(TodoList list, Scanner scanner) {
-        this.list = list;
+    public UserInterface(TodoList todoList, Scanner scanner) {
+        this.todoList = todoList;
         this.scanner = scanner;
     }
     
@@ -30,13 +30,13 @@ public class UserInterface {
             } else if (command.equals("add")){
                 System.out.println("To add: ");
                 String task = scanner.nextLine();
-                list.add(task);
-            } else if(command.equals("remove")){
-                System.out.println("Wchich one is removed?");
-                int idx = Integer.valueOf(scanner.nextLine());
-                list.remove(idx-1);
+                todoList.add(task);
             } else if (command.equals("list")){
-                list.print();
+                todoList.print();
+            } else if (command.equals("remove")){
+                System.out.println("Wchich one is removed?");
+                int taskToRemove = Integer.valueOf(scanner.nextLine());
+                todoList.remove(taskToRemove);
             }
         }
     }
