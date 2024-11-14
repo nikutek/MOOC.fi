@@ -1,6 +1,7 @@
 
+import java.util.ArrayList;
 
-public class Card {
+public class Card implements Comparable<Card> {
 
     private int value;
     private Suit suit;
@@ -17,7 +18,7 @@ public class Card {
     @Override
     public String toString() {
         String cardValue = "" + value;
-        if(value == 11) {
+        if (value == 11) {
             cardValue = "J";
         } else if (value == 12) {
             cardValue = "Q";
@@ -26,7 +27,7 @@ public class Card {
         } else if (value == 14) {
             cardValue = "A";
         }
-        
+
         return suit + " " + cardValue;
     }
 
@@ -38,4 +39,18 @@ public class Card {
         return suit;
     }
 
+    public int compareTo(Card compared) {
+        if (this.getValue() - compared.getValue() == 0) {
+
+            ArrayList<String> suits = new ArrayList<String>();
+            suits.add("SPADE");
+            suits.add("HEART");
+            suits.add("DIAMOND");
+            suits.add("CLUB");
+            int score = suits.indexOf(this.getSuit().toString());
+            int comparedScore = suits.indexOf(compared.getSuit().toString());
+            return comparedScore - score ;
+        }
+        return this.getValue() - compared.getValue();
+    }
 }
