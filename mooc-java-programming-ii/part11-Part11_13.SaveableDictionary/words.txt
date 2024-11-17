@@ -1,3 +1,2 @@
-apina:monkey
-alla oleva:below
-olut:beer
+banana:banan
+monkey:malpa
