@@ -1,6 +1,14 @@
 University of Helsinki’s massive open online course (MOOC) on programming
 
-The course content is also no longer updated or maintained by it's creators.
-Sadly due to a bug in exercise part07-Part07_07.RecipeSearch I am not able to get the points required to be granted a certificate. Localy downloaded test cases' names dont match the names on the server resulting in constant errors in the TMC tool. I strongly belive my code works as intended.
-
-However, even without having the course oficially 100% completed,I belive it helped me learn and become overall a better developer.
+Feel free to help me find bugs in my code:  
+part01-Part01_01.Sandbox  
+part02-Part02_34.AdvancedAstrology  
+part05-Part05_10.CardPayments  
+part06-Part06_13.Exercises  
+part07-Part07_07.RecipeSearch  
+part08-Part08_13.VehicleRegistry  
+part09-Part09_03.Warehousing  
+part09-Part09_12.Animals  
+part10-Part10_08.Weighting  
+part10-Part10_17.SortThemCards  
+Part11_10.FlightControl
